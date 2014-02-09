@@ -18,7 +18,8 @@ OTHER_FILES = \
 #    ../rpm/harbour-sailfactor.yaml \
     ../rpm/harbour-sailfactor.spec \
     qml/main.qml \
-    qml/pages/SailFactor.qml
+    qml/pages/SailFactor.qml \
+    qml/cover/Cover.qml
 
 INCLUDEPATH += $$PWD
 

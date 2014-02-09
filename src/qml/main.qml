@@ -5,6 +5,7 @@ import "pages"
 ApplicationWindow
 {
     initialPage: sailFactorComponent
+    cover: Qt.resolvedUrl("cover/Cover.qml")
     Component {
         id: sailFactorComponent
         SailFactor { }
