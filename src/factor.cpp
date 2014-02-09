@@ -50,5 +50,7 @@ Factorizer::Factorizer() {}
 QString Factorizer::factorize(int in, int iterations) const {
     qDebug() << "factorize called" << in << iterations;
 
-    return factHelper(in, iterations).c_str();
+    QString result = factHelper(in, iterations).c_str();
+    result.replace("*", "×");
+    return result;
 }
