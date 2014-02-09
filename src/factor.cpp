@@ -28,12 +28,19 @@ bool fact(std::vector <std::string> *out, int input, const char *otherFacts, int
 std::string factHelper(int input, int iterations) {
         std::vector <std::string> out;
         std::ostringstream s;
+        std::string equals;
         s << input << "\n";
+
+        if (input >= 0)
+            equals = " = ";
+        else
+            equals = " = -";
+
         if (!fact(&out, input, "", 20)) {
-            s << " = " << input;
+            s << equals << input;
         } else {
             for (int i = 0; i < iterations && i < static_cast<int>(out.size()); ++i)
-                s << " = " << out[i] << "\n";
+                s << equals << out[i] << "\n";
         }
         return s.str();
 }
