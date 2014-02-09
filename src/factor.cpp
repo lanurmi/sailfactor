@@ -37,7 +37,7 @@ std::string factHelper(int input, int iterations) {
             equals = " = -";
 
         if (!fact(&out, input, "", 20)) {
-            s << equals << input;
+            s << " = " << input;
         } else {
             for (int i = 0; i < iterations && i < static_cast<int>(out.size()); ++i)
                 s << equals << out[i] << "\n";
