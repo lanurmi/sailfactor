@@ -88,6 +88,10 @@ Page {
             }
 
             Label {
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.margins: Theme.paddingLarge
+
                 id: slideLabel
                 text: fact.factorize(parseInt(a.text), iterSlider.value)
             }
