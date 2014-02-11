@@ -82,7 +82,7 @@ Page {
                 anchors.right: parent.right
                 id: iterSlider
                 minimumValue: 1
-                maximumValue: 10
+                maximumValue: 20
                 value: 1
                 stepSize: 1
             }
@@ -94,6 +94,7 @@ Page {
 
                 id: slideLabel
                 text: fact.factorize(parseInt(a.text), iterSlider.value)
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             }
         }
     }
