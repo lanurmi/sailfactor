@@ -90,7 +90,7 @@ std::string factHelper(int input, int iterations) {
         else
             equals = " = -";
 
-        if (!fact(&out, input, intvec(), 20)) {
+        if (!fact(&out, input, intvec(), iterations)) {
             s << " = " << input;
         } else {
             for (int i = 0; i < iterations && i < static_cast<int>(out.size()); ++i) {
