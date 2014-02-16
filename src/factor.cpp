@@ -15,7 +15,7 @@ bool fact(std::vector <intvec> *out, int input, const intvec &otherFacts, int le
                 return false;
 
         if (input < 0) input *=-1;
-        for (int d = input - 1; d > 1; --d) {
+        for (int d = input / 2; d > 1; --d) {
                 if (input % d == 0) {
                         intvec tmp1 = otherFacts, tmp2 = otherFacts;
 
