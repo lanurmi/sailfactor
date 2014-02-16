@@ -10,6 +10,15 @@
 
 typedef std::vector<int> intvec;
 
+static bool isPrime(int n) {
+    if (n <= 1)
+        return false;
+    for (int d = n / 2; d > 1; --d)
+        if (n % d == 0)
+            return false;
+    return true;
+}
+
 bool fact(std::vector <intvec> *out, int input, const intvec &otherFacts, int level, int iter = 0) {
         if (level == 0)
                 return false;
@@ -62,11 +71,20 @@ static std::string superScript(int i) {
     return ret;
 }
 
+static std::string decoratePrime(int x) {
+    std::ostringstream out;
+    if (isPrime(x))
+        out << "<b>" << x << "</b>";
+    else
+        out << x;
+    return out.str();
+}
+
 static std::string stringify(const intvec &m) {
     std::ostringstream out;
     int prevFactor = 0;
     for (intvec::const_iterator x = m.begin(); x != m.end(); ++x) {
-        out << (*x);
+        out << decoratePrime(*x);
         prevFactor = *x;
         int exponent = 1;
         for (intvec::const_iterator y = x + 1; y != m.end() && (*y) == prevFactor; ++y, ++x)
@@ -85,19 +103,23 @@ std::string factHelper(int input, int iterations) {
         std::string equals;
         s << input;
 
+        if (iterations == 0)
+            goto end;
+
         if (input >= 0)
             equals = " =\u00A0";
         else
             equals = " =\u00A0-";
 
         if (!fact(&out, input, intvec(), iterations)) {
-            s << " = " << input;
+            s << " = " << decoratePrime(input);
         } else {
             for (int i = 0; i < iterations && i < static_cast<int>(out.size()); ++i) {
                 std::sort(out[i].begin(), out[i].end());
                 s << equals << stringify(out[i]);
             }
         }
+end:
         return s.str();
 }
 
