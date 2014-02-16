@@ -74,7 +74,7 @@ static std::string stringify(const intvec &m) {
         if (exponent > 1)
             out << superScript(exponent);
         if (x + 1 != m.end())
-            out << " * ";
+            out << "\u00A0*\u00A0";
     }
     return out.str();
 }
@@ -86,9 +86,9 @@ std::string factHelper(int input, int iterations) {
         s << input;
 
         if (input >= 0)
-            equals = " = ";
+            equals = " =\u00A0";
         else
-            equals = " = -";
+            equals = " =\u00A0-";
 
         if (!fact(&out, input, intvec(), iterations)) {
             s << " = " << input;
