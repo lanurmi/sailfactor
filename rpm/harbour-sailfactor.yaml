@@ -1,5 +1,5 @@
 Name: harbour-sailfactor
-Summary: Factorization utility
+Summary: A tool for factorizing integers
 Version: 0.1
 Release: 1
 Group: Qt/Qt
@@ -7,7 +7,7 @@ License: Unknown
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |-
-  Factorize your integers!
+  Sailfactor is a tool for finding the factors of an integer, step by step.
 Configure: none
 Builder: qtc5
 PkgConfigBR:

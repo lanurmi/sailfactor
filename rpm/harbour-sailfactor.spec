@@ -12,7 +12,7 @@ Name:       harbour-sailfactor
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
-Summary:    Factorization utility
+Summary:    A tool for factorizing integers
 Version:    0.1
 Release:    1
 Group:      Qt/Qt
@@ -27,7 +27,7 @@ BuildRequires:  pkgconfig(sailfishapp)
 BuildRequires:  desktop-file-utils
 
 %description
-Factorize your integers!
+Sailfactor is a tool for finding the factors of an integer, step by step.
 
 %package test
 Summary:    Tests for the Helloworld Pro for Sailfish
