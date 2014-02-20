@@ -3,6 +3,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <cassert>
 #include <string>
 #include <sstream>
 #include <vector>
@@ -39,6 +40,26 @@ bool fact(std::vector <intvec> *out, int input, const intvec &otherFacts, int le
                 }
         }
         return false;
+}
+
+void runUnitTests() {
+    assert(isPrime(1) == false);
+    assert(isPrime(3) == true);
+    assert(isPrime(4) == false);
+    assert(isPrime(1237) == true);
+
+    std::vector <intvec> out1, out2;
+    intvec otherFacts1, otherFacts2;
+
+    assert(fact(&out1, 1234, otherFacts1, 3) == true);
+    assert(out1.size() == 1);
+    for (size_t i = 0; i < out1[0].size(); ++i)
+        qDebug() << i << ":" << out1[0][i];
+    std::sort(out1[0].begin(), out1[0].end());
+    assert(out1[0][0] == 2);
+    assert(out1[0][1] == 617);
+
+    assert(fact(&out2, 397, otherFacts2, 3) == false);
 }
 
 static std::string superScriptDigit(int i) {

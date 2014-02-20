@@ -16,4 +16,6 @@ public slots:
     }
 };
 
+void runUnitTests();
+
 #endif // FACTOR_H
