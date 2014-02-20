@@ -12,14 +12,14 @@ Page {
             id: pullDownMenu
             MenuItem {
                 id: aboutMenuAction
-                text: "About"
+                text: qsTr("About")
                 onClicked: {
                     pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
                 }
             }
             MenuItem {
                 id: helpMenuAction
-                text: "Help"
+                text: qsTr("Help")
                 onClicked: {
                     pageStack.push(Qt.resolvedUrl("HelpPage.qml"))
                 }
@@ -35,7 +35,7 @@ Page {
             width: page.width
             spacing: Theme.paddingLarge
             PageHeader {
-                title: "Factorization"
+                title: qsTr("Factorization")
             }
 
             BackgroundItem {
@@ -55,7 +55,7 @@ Page {
                         id: inputField
                         width: parent.width
                         text: ""
-                        placeholderText: "Enter an integer here."
+                        placeholderText: qsTr("Enter an integer.")
                         validator: IntValidator {}
                         // Show a numpad only, instead of a full keyboard
                         inputMethodHints: Qt.ImhDigitsOnly
@@ -82,7 +82,7 @@ Page {
                 maximumValue: 20
                 value: 1
                 stepSize: 1
-                label: "Steps"
+                label: qsTr("Steps")
                 valueText: value
             }
         }

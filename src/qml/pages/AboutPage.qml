@@ -18,11 +18,11 @@ Page {
             spacing: Theme.paddingLarge
 
             PageHeader {
-                title: "About Sailfactor"
+                title: qsTr("About Sailfactor")
             }
 
             SectionHeader {
-                text: "License"
+                text: qsTr("License")
             }
 
             Label {
@@ -31,11 +31,11 @@ Page {
                     right: parent.right
                     margins: Theme.paddingLarge
                 }
-                text: "[to be decided]"
+                text: qsTr("[to be decided]")
             }
 
             SectionHeader {
-                text: "Author"
+                text: qsTr("Author")
             }
 
             Label {
@@ -48,7 +48,7 @@ Page {
             }
 
             SectionHeader {
-                text: "Source code"
+                text: qsTr("Source code")
             }
 
             Label {
@@ -57,7 +57,7 @@ Page {
                     right: parent.right
                     margins: Theme.paddingLarge
                 }
-                text: "will be available at github"
+                text: qsTr("will be available at github")
                 BackgroundItem {
                     anchors.fill: parent
                     onClicked: Qt.openUrlExternally("http://www.github.com/lanurmi/")

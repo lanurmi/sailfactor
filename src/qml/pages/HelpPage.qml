@@ -9,7 +9,7 @@ Page {
         spacing: Theme.paddingLarge
 
         PageHeader {
-            title: "Sailfactor Help"
+            title: qsTr("Sailfactor Help")
         }
 
         Label {
@@ -18,11 +18,11 @@ Page {
                 right: parent.right
                 margins: Theme.paddingLarge
             }
-            text: "Sailfactor is a tool for finding the factors of an " +
+            text: qsTr("Sailfactor is a tool for finding the factors of an " +
             "integer, step by step. The slider is used to adjust the maximum " +
             "number of factorization steps to carry out.<br><br>" +
             "<i>Prime</i> factors are always <b>highlighted</b> in the output. " +
-            "Ultimately all the factors shown will be prime factors."
+            "Ultimately all the factors shown will be prime factors.")
             wrapMode: Text.WordWrap
         }
     }
