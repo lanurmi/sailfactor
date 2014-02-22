@@ -25,6 +25,11 @@ int main(int argc, char *argv[])
     view->engine()->rootContext()->setContextProperty("fact", &fact);
     view->setSource(SailfishApp::pathTo("qml/main.qml"));
 
+    view->setTitle("Sailfactor");
+
+    app->setApplicationName("harbour-sailfactor");
+    app->setApplicationDisplayName("Sailfactor");
+
     view->show();
 
     return app->exec();
