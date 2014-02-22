@@ -18,7 +18,7 @@ Page {
             spacing: Theme.paddingLarge
 
             PageHeader {
-                title: qsTr("About Sailfactor")
+                title: qsTr("About Sailfactor 0.1")
             }
 
             SectionHeader {
@@ -57,10 +57,10 @@ Page {
                     right: parent.right
                     margins: Theme.paddingLarge
                 }
-                text: qsTr("will be available at github")
+                text: qsTr("will soon be available at github")
                 BackgroundItem {
                     anchors.fill: parent
-                    onClicked: Qt.openUrlExternally("http://www.github.com/lanurmi/")
+                    onClicked: Qt.openUrlExternally("http://www.github.com/lanurmi/sailfactor")
                 }
             }
         }
