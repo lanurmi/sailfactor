@@ -22,7 +22,8 @@ Page {
             "integer, step by step. The slider is used to adjust the maximum " +
             "number of factorization steps to carry out.<br><br>" +
             "<i>Prime</i> factors are always <b>highlighted</b> in the output. " +
-            "Ultimately all the factors shown will be prime factors.")
+            "When the number of steps is high enough, all the factors shown will " +
+            "be prime factors.")
             wrapMode: Text.WordWrap
         }
     }
