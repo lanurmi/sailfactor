@@ -20,6 +20,8 @@ static bool isPrime(int n) {
     return true;
 }
 
+/* This implementation works, but it is way too slow with big numbers. Not only because of the recursion,
+ * but because this is quite much the brute force algorithm. */
 bool fact(std::vector <intvec> *out, int input, const intvec &otherFacts, int level, int iter = 0) {
         if (level == 0)
                 return false;

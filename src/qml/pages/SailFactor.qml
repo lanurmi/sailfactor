@@ -56,7 +56,8 @@ Page {
                         width: parent.width
                         text: ""
                         placeholderText: qsTr("Enter an integer.")
-                        validator: IntValidator {}
+                        // Ten million ought to be enough for anyone.
+                        validator: IntValidator { bottom: -9999999; top: 9999999 }
                         // Show a numpad only, instead of a full keyboard
                         inputMethodHints: Qt.ImhDigitsOnly
                     }
@@ -79,7 +80,7 @@ Page {
 
                 id: levelSlider
                 minimumValue: 0
-                maximumValue: 20
+                maximumValue: 22
                 value: 1
                 stepSize: 1
                 label: qsTr("Steps")
