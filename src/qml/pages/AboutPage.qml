@@ -31,7 +31,7 @@ Page {
                     right: parent.right
                     margins: Theme.paddingLarge
                 }
-                text: qsTr("[to be decided]")
+                text: "MIT"
             }
 
             SectionHeader {

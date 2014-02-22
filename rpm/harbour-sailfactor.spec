@@ -16,7 +16,7 @@ Summary:    A tool for factorizing integers
 Version:    0.1
 Release:    1
 Group:      Qt/Qt
-License:    Unknown
+License:    MIT
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-sailfactor.yaml
 Requires:   libsailfishapp
