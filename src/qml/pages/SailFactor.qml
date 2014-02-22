@@ -56,6 +56,7 @@ Page {
                         validator: IntValidator { bottom: -9999999; top: 9999999 }
                         // Show a numpad only, instead of a full keyboard
                         inputMethodHints: Qt.ImhDigitsOnly
+                        focus: true
                     }
                 }
             }
