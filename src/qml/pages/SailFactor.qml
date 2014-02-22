@@ -41,10 +41,6 @@ Page {
             BackgroundItem {
                 width: parent.width
                 height: contentItem.childrenRect.height
-                Component.onCompleted: {
-                    console.log("row compl. wxh: " + width + "x" + height)
-                }
-
                 Row {
                     anchors.left: parent.left
                     anchors.right: parent.right
