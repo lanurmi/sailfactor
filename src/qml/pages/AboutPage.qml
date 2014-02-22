@@ -57,7 +57,7 @@ Page {
                     right: parent.right
                     margins: Theme.paddingLarge
                 }
-                text: qsTr("will soon be available at github")
+                text: qsTr("available at github")
                 BackgroundItem {
                     anchors.fill: parent
                     onClicked: Qt.openUrlExternally("http://www.github.com/lanurmi/sailfactor")
