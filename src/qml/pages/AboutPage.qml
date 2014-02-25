@@ -32,6 +32,10 @@ Page {
                     margins: Theme.paddingLarge
                 }
                 text: "MIT"
+                BackgroundItem {
+                    anchors.fill: parent
+                    onClicked: pageStack.push(Qt.resolvedUrl("LicensePage.qml"))
+                }
             }
 
             SectionHeader {

@@ -21,7 +21,8 @@ OTHER_FILES = \
     qml/pages/SailFactor.qml \
     qml/cover/Cover.qml \
     qml/pages/AboutPage.qml \
-    qml/pages/HelpPage.qml
+    qml/pages/HelpPage.qml \
+    qml/pages/LicensePage.qml
 
 INCLUDEPATH += $$PWD
 
