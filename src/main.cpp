@@ -17,7 +17,9 @@ int main(int argc, char *argv[])
 
     Factorizer fact;
 
+#ifdef QT_QML_DEBUG
     runUnitTests();
+#endif
 
 //    Here's how you will add QML components whenever you start using them
 //    Check https://github.com/amarchen/Wikipedia for a more full example
