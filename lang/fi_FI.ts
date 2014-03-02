@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.0" language="fi_FI">
 <context>
     <name>AboutPage</name>
     <message>
         <location filename="../src/qml/pages/AboutPage.qml" line="21"/>
-        <source>About Sailfactor 0.1</source>
-        <translation>Tietoja: Sailfactor 0.1</translation>
+        <source>About Sailfactor %1</source>
+        <translation>Tietoja: Sailfactor %1</translation>
     </message>
     <message>
         <location filename="../src/qml/pages/AboutPage.qml" line="25"/>
@@ -34,12 +34,12 @@
     <message>
         <location filename="../src/qml/pages/HelpPage.qml" line="12"/>
         <source>Sailfactor Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Sailfactorin ohje</translation>
     </message>
     <message>
         <location filename="../src/qml/pages/HelpPage.qml" line="21"/>
         <source>Sailfactor is a tool for finding the factors of an integer, step by step. The slider is used to adjust the maximum number of factorization steps to carry out.&lt;br&gt;&lt;br&gt;&lt;i&gt;Prime&lt;/i&gt; factors are always &lt;b&gt;highlighted&lt;/b&gt; in the output. When the number of steps is high enough, all the factors shown will be prime factors.</source>
-        <translation>Sailfactor on työkalu kokonaisluvun tekijöiden vaiheittaiseen etsimiseen. Liukusäätimellä valitaan suoritettavien vaiheiden enimmäismäärä.&lt;br&gt;&lt;br&gt;&lt;i&gt;Alkuluku&lt;/i&gt;tekijät näytetään aina &lt;b&gt;korostettuina&lt;/b&gt; tulosteessa. Kun suoritettavien vaiheiden määrä on riittävän suuri, kaikki näytetyt tekijät ovat alkulukuja.</translation>
+        <translation>Sailfactor on työkalu kokonaisluvun tekijöiden vaiheittaiseen etsimiseen. Liukusäätimellä valitaan suoritettavien vaiheiden enimmäismäärä.&lt;br&gt;&lt;br&gt;Tekijät, jotka ovat &lt;i&gt;alkulukuja&lt;/i&gt;, näytetään aina &lt;b&gt;korostettuina&lt;/b&gt; tulosteessa. Kun suoritettavien vaiheiden määrä on riittävän suuri, kaikki näytetyt tekijät ovat alkulukuja.</translation>
     </message>
 </context>
 <context>
