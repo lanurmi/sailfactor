@@ -5,6 +5,6 @@ CoverBackground {
     Label {
         id: label
         anchors.centerIn: parent
-        text: "Factorization"
+        text: "Sailfactor"
     }
 }
