@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>lang/sailfactor_fi.qm</file>
+        <file>lang/sailfactor_es.qm</file>
     </qresource>
 </RCC>
