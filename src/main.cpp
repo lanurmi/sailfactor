@@ -8,12 +8,25 @@
 
 #include "factor.h"
 
+void loadTranslations() {
+    QString langCode = QLocale::system().name().mid(0, 2);
+    const QString Prefix("sailfactor_");
+
+    if (QFile::exists(QString(":/lang/") + Prefix + langCode + ".qm")) {
+        QTranslator *translator = new QTranslator(QCoreApplication::instance());
+        translator->load(Prefix + langCode, ":/lang");
+        QCoreApplication::installTranslator(translator);
+    }
+}
+
 int main(int argc, char *argv[])
 {
     // For this example, wizard-generates single line code would be good enough,
     // but very soon it won't be enough for you anyway, so use this more detailed example from start
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
     QScopedPointer<QQuickView> view(SailfishApp::createView());
+
+    loadTranslations();
 
     Factorizer fact;
 
