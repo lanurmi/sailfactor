@@ -66,7 +66,7 @@ Page {
                 anchors.margins: Theme.paddingLarge
                 height: 100
 
-                id: slideLabel
+                id: factorizationResult
                 text: fact.factorize(parseInt(inputField.text), levelSlider.value)
                 wrapMode: Text.WordWrap
             }
