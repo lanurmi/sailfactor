@@ -28,3 +28,6 @@ INCLUDEPATH += $$PWD
 
 HEADERS += \
     factor.h
+
+RESOURCES += \
+    ../translations.qrc

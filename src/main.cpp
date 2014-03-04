@@ -8,10 +8,23 @@
 
 #include "factor.h"
 
+void loadTranslations() {
+    QString langCode = QLocale::system().name().mid(0, 2);
+    const QString Prefix("sailfactor_");
+
+    if (QFile::exists(QString(":/lang/") + Prefix + langCode + ".qm")) {
+        QTranslator *translator = new QTranslator(QCoreApplication::instance());
+        translator->load(Prefix + langCode, ":/lang");
+        QCoreApplication::installTranslator(translator);
+    }
+}
+
 int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
     QScopedPointer<QQuickView> view(SailfishApp::createView());
+
+    loadTranslations();
 
     Factorizer fact;
 
