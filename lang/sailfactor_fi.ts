@@ -38,8 +38,13 @@
     </message>
     <message>
         <location filename="../src/qml/pages/HelpPage.qml" line="21"/>
-        <source>Sailfactor is a tool for finding the factors of an integer, step by step. The slider is used to adjust the maximum number of factorization steps to carry out.&lt;br&gt;&lt;br&gt;&lt;i&gt;Prime&lt;/i&gt; factors are always &lt;b&gt;highlighted&lt;/b&gt; in the output. When the number of steps is high enough, all the factors shown will be prime factors.</source>
-        <translation>Sailfactor on työkalu kokonaisluvun tekijöiden vaiheittaiseen etsimiseen. Liukusäätimellä valitaan suoritettavien vaiheiden enimmäismäärä.&lt;br&gt;&lt;br&gt;Tekijät, jotka ovat &lt;i&gt;alkulukuja&lt;/i&gt;, näytetään aina &lt;b&gt;korostettuina&lt;/b&gt; tulosteessa. Kun suoritettavien vaiheiden määrä on riittävän suuri, kaikki näytetyt tekijät ovat alkulukuja.</translation>
+        <source>Sailfactor is a tool for finding the factors of an integer, step by step. The slider is used to adjust the maximum number of factorization steps to carry out.</source>
+        <translation>Sailfactor on työkalu kokonaisluvun tekijöiden vaiheittaiseen etsimiseen. Liukusäätimellä valitaan suoritettavien vaiheiden enimmäismäärä.</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/pages/HelpPage.qml" line="24"/>
+        <source>&lt;i&gt;Prime&lt;/i&gt; factors are always &lt;b&gt;highlighted&lt;/b&gt; in the output. When the number of steps is high enough, all the factors shown will be prime factors.</source>
+        <translation>Tekijät, jotka ovat &lt;i&gt;alkulukuja&lt;/i&gt;, näytetään aina &lt;b&gt;korostettuina&lt;/b&gt; tulosteessa. Kun suoritettavien vaiheiden määrä on riittävän suuri, kaikki näytetyt tekijät ovat alkulukuja.</translation>
     </message>
 </context>
 <context>

@@ -20,8 +20,8 @@ Page {
             }
             text: qsTr("Sailfactor is a tool for finding the factors of an " +
             "integer, step by step. The slider is used to adjust the maximum " +
-            "number of factorization steps to carry out.<br><br>" +
-            "<i>Prime</i> factors are always <b>highlighted</b> in the output. " +
+            "number of factorization steps to carry out.") + "<br><br>" +
+            qsTr("<i>Prime</i> factors are always <b>highlighted</b> in the output. " +
             "When the number of steps is high enough, all the factors shown will " +
             "be prime factors.")
             wrapMode: Text.WordWrap

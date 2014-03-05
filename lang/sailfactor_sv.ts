@@ -38,8 +38,13 @@
     </message>
     <message>
         <location filename="../src/qml/pages/HelpPage.qml" line="21"/>
-        <source>Sailfactor is a tool for finding the factors of an integer, step by step. The slider is used to adjust the maximum number of factorization steps to carry out.&lt;br&gt;&lt;br&gt;&lt;i&gt;Prime&lt;/i&gt; factors are always &lt;b&gt;highlighted&lt;/b&gt; in the output. When the number of steps is high enough, all the factors shown will be prime factors.</source>
-        <translation>Sailfactor är ett verktyg som används för att söka faktorer av ett heltal, steg för steg. Med skjutreglaget regleras antal faktoriseringssteg som utförs.&lt;br&gt;&lt;br&gt;&lt;i&gt;Prim&lt;/i&gt;faktorer visas alltid &lt;b&gt;markerade&lt;/b&gt;. När antal steg är tillräckligt hög, så skall alla faktorer som visas vara primfaktorer.</translation>
+        <source>Sailfactor is a tool for finding the factors of an integer, step by step. The slider is used to adjust the maximum number of factorization steps to carry out.</source>
+        <translation>Sailfactor är ett verktyg som används för att söka faktorer av ett heltal, steg för steg. Med skjutreglaget regleras antal faktoriseringssteg som utförs.</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/pages/HelpPage.qml" line="24"/>
+        <source>&lt;i&gt;Prime&lt;/i&gt; factors are always &lt;b&gt;highlighted&lt;/b&gt; in the output. When the number of steps is high enough, all the factors shown will be prime factors.</source>
+        <translation>&lt;i&gt;Prim&lt;/i&gt;faktorer visas alltid &lt;b&gt;markerade&lt;/b&gt;. När antal steg är tillräckligt hög, så skall alla faktorer som visas vara primfaktorer.</translation>
     </message>
 </context>
 <context>
