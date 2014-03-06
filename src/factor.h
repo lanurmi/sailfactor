@@ -9,7 +9,7 @@ class Factorizer : public QObject
     Q_OBJECT
 public:
     Factorizer();
-    Q_INVOKABLE QString factorize(int in, int iterations) const;
+    Q_INVOKABLE QString factorize(int in, int iterations, bool outputForCover) const;
 public slots:
     void refresh() {
         qDebug() << "slot called";

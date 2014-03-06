@@ -120,11 +120,13 @@ static std::string stringify(const intvec &m) {
     return out.str();
 }
 
-std::string factHelper(int input, int iterations) {
+std::string factHelper(int input, int iterations, bool outputForCover) {
         std::vector <intvec> out;
         std::ostringstream s;
         std::string equals;
         s << input;
+        if (outputForCover)
+            s << "<br />";
 
         if (iterations == 0)
             goto end;
@@ -137,7 +139,9 @@ std::string factHelper(int input, int iterations) {
         if (!fact(&out, input, intvec(), iterations)) {
             s << " = " << decoratePrime(input);
         } else {
-            for (int i = 0; i < iterations && i < static_cast<int>(out.size()); ++i) {
+            for (int i = static_cast<int>(outputForCover ? out.size() - 1 : 0);
+                 i < iterations && i < static_cast<int>(out.size());
+                 ++i) {
                 std::sort(out[i].begin(), out[i].end());
                 s << equals << stringify(out[i]);
             }
@@ -148,10 +152,10 @@ end:
 
 Factorizer::Factorizer() {}
 
-QString Factorizer::factorize(int in, int iterations) const {
+QString Factorizer::factorize(int in, int iterations, bool outputForCover) const {
     qDebug() << "factorize called" << in << iterations;
 
-    QString result = factHelper(in, iterations).c_str();
+    QString result = factHelper(in, iterations, outputForCover).c_str();
     result.replace("*", "×");
     return result;
 }
