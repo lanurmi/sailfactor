@@ -8,7 +8,7 @@
 
 #include "factor.h"
 
-void loadTranslations() {
+static void loadTranslations() {
     QString langCode = QLocale::system().name().mid(0, 2);
     const QString Prefix("sailfactor_");
 
