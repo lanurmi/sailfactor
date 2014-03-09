@@ -31,7 +31,7 @@ Page {
                 text: "\
 The MIT License (MIT)\n\
 \n\
-Copyright © 2014 Lauri Nurmi\n\
+Copyright \u00A9 2014 Lauri Nurmi\n\
 \n\
 Permission is hereby granted, free of charge, to any person obtaining a copy \
 of this software and associated documentation files (the \u201CSoftware\u201D), to deal \
