@@ -66,27 +66,32 @@
 <context>
     <name>SailFactor</name>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="19"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="18"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="26"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="25"/>
         <source>Help</source>
         <translation>Ayuda</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="42"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="41"/>
         <source>Factorization</source>
         <translation>Factorización</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="58"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="57"/>
         <source>Enter an integer.</source>
         <translation>Escriba un número entero.</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="87"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="58"/>
+        <source>Integer to factorize</source>
+        <translation>Número entero que factorizará</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/pages/SailFactor.qml" line="89"/>
         <source>Steps</source>
         <translation>Pasos</translation>
     </message>
