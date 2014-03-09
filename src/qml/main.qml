@@ -21,7 +21,7 @@ ApplicationWindow
         if (_sailfactor._field.length === 0)
             return qsTr("Enter an integer first.");
         else
-            return fact.factorize(parseInt(_sailfactor._aText), _sailfactor._slider, true);
+            return fact.factorize(parseInt(_sailfactor._field), _sailfactor._slider, true);
     }
 
     function nextStep() {

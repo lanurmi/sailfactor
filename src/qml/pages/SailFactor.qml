@@ -4,7 +4,6 @@ import Sailfish.Silica 1.0
 Page {
     id: page
 
-    property alias _aText: factorizationResult.text
     property alias _slider: levelSlider.value
     property alias _field: inputField.text
 
