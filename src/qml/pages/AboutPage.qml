@@ -18,7 +18,7 @@ Page {
             spacing: Theme.paddingLarge
 
             PageHeader {
-                title: qsTr("About Sailfactor %1").arg("0.1")
+                title: qsTr("About Sailfactor %1").arg("0.2")
             }
 
             SectionHeader {
