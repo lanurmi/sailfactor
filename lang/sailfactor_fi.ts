@@ -32,7 +32,7 @@
 <context>
     <name>Cover</name>
     <message>
-        <location filename="../src/qml/cover/Cover.qml" line="24"/>
+        <location filename="../src/qml/cover/Cover.qml" line="22"/>
         <source>Steps: %1</source>
         <translation>Vaiheita: %1</translation>
     </message>
@@ -94,7 +94,7 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/qml/main.qml" line="23"/>
+        <location filename="../src/qml/main.qml" line="22"/>
         <source>Enter an integer first.</source>
         <translation>Syötä ensin kokonaisluku.</translation>
     </message>
