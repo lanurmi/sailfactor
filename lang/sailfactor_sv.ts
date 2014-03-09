@@ -30,6 +30,14 @@
     </message>
 </context>
 <context>
+    <name>Cover</name>
+    <message>
+        <location filename="../src/qml/cover/Cover.qml" line="24"/>
+        <source>Steps: %1</source>
+        <translation>Antal steg: %1</translation>
+    </message>
+</context>
+<context>
     <name>HelpPage</name>
     <message>
         <location filename="../src/qml/pages/HelpPage.qml" line="12"/>
@@ -58,29 +66,37 @@
 <context>
     <name>SailFactor</name>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="15"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="19"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="22"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="26"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="38"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="42"/>
         <source>Factorization</source>
         <translation>Faktorisering</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="54"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="58"/>
         <source>Enter an integer.</source>
         <translation>Ange ett heltal.</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="83"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="87"/>
         <source>Steps</source>
         <translation>Steg</translation>
+    </message>
+</context>
+<context>
+    <name>main</name>
+    <message>
+        <location filename="../src/qml/main.qml" line="23"/>
+        <source>Enter an integer first.</source>
+        <translation>Ange ett heltal först.</translation>
     </message>
 </context>
 </TS>

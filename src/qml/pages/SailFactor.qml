@@ -4,6 +4,10 @@ import Sailfish.Silica 1.0
 Page {
     id: page
 
+    property alias _aText: factorizationResult.text
+    property alias _slider: levelSlider.value
+    property alias _field: inputField.text
+
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
         anchors.fill: parent
@@ -67,7 +71,7 @@ Page {
                 height: 100
 
                 id: factorizationResult
-                text: fact.factorize(parseInt(inputField.text), levelSlider.value)
+                text: fact.factorize(parseInt(inputField.text), levelSlider.value, false)
                 wrapMode: Text.WordWrap
             }
             Slider {
