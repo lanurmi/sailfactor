@@ -6,6 +6,7 @@ Page {
 
     property alias _aText: factorizationResult.text
     property alias _slider: levelSlider.value
+    property alias _field: inputField.text
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {

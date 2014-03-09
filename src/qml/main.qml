@@ -18,7 +18,10 @@ ApplicationWindow
     property SailFactor _sailfactor
 
     function getOutput() {
-        return fact.factorize(parseInt(_sailfactor._aText), _sailfactor._slider, true);
+        if (_sailfactor._field.length === 0)
+            return qsTr("Enter an integer first.");
+        else
+            return fact.factorize(parseInt(_sailfactor._aText), _sailfactor._slider, true);
     }
 
     function nextStep() {
