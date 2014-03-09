@@ -3,10 +3,11 @@ import Sailfish.Silica 1.0
 import "../pages"
 
 CoverBackground {
+    id: cover
 
     Column {
         anchors.fill: parent
-        width: 180
+        width: cover.width
         spacing: Theme.paddingSmall
         y: Theme.paddingLarge
         x: Theme.paddingLarge
@@ -26,7 +27,7 @@ CoverBackground {
         Label {
             id: label
             x: Theme.paddingLarge
-            width: parent.width
+            width: parent.width - Theme.paddingLarge
 
             text: getOutput()
             wrapMode: Text.WordWrap
