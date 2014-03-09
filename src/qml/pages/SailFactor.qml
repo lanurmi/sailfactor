@@ -60,6 +60,8 @@ Page {
                         // Show a numpad only, instead of a full keyboard
                         inputMethodHints: Qt.ImhDigitsOnly
                         focus: true
+                        EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                        EnterKey.onClicked: focus = false
                     }
                 }
             }
