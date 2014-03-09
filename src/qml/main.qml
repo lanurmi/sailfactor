@@ -19,7 +19,7 @@ ApplicationWindow
 
     function getOutput() {
         if (_sailfactor._field.length === 0)
-            return qsTr("Enter an integer first.");
+            return "<font color=\"red\"><i>" + qsTr("Enter an integer first.") + "</i></font>";
         else
             return fact.factorize(parseInt(_sailfactor._field), _sailfactor._slider, true);
     }
