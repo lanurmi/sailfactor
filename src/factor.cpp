@@ -49,6 +49,7 @@ void runUnitTests() {
     assert(isPrime(3) == true);
     assert(isPrime(4) == false);
     assert(isPrime(1237) == true);
+    assert(isPrime(1237435) == false);
 
     std::vector <intvec> out1, out2;
     intvec otherFacts1, otherFacts2;
