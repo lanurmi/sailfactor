@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
 
     view->setTitle("Sailfactor");
 
-    app->setApplicationName("harbour-sailfactor");
     app->setApplicationDisplayName("Sailfactor");
 
     view->show();
