@@ -22,14 +22,14 @@ static bool isPrime(int n) {
 
 /* This implementation works, but it is way too slow with big numbers. Not only because of the recursion,
  * but because this is quite much the brute force algorithm. */
-bool fact(std::vector <intvec> *out, int input, const intvec &otherFacts, int level, int iter = 0) {
+bool factorize(std::vector <intvec> *out, int input, const intvec &otherFactors, int level, int iter = 0) {
         if (level == 0)
                 return false;
 
-        if (input < 0) input *=-1;
+        if (input < 0) input *= -1;
         for (int d = input / 2; d > 1; --d) {
                 if (input % d == 0) {
-                        intvec tmp1 = otherFacts, tmp2 = otherFacts;
+                        intvec tmp1 = otherFactors, tmp2 = otherFactors;
 
                         tmp1.push_back(d);
                         tmp1.push_back(input / d);
@@ -37,7 +37,7 @@ bool fact(std::vector <intvec> *out, int input, const intvec &otherFacts, int le
                         tmp2.push_back(input / d);
 
                         out->push_back(tmp1);
-                        fact(out, d, tmp2, level - 1, iter + 1);
+                        factorize(out, d, tmp2, level - 1, iter + 1);
                         return true;
                 }
         }
@@ -54,7 +54,7 @@ void runUnitTests() {
     std::vector <intvec> out1, out2;
     intvec otherFacts1, otherFacts2;
 
-    assert(fact(&out1, 1234, otherFacts1, 3) == true);
+    assert(factorize(&out1, 1234, otherFacts1, 3) == true);
     assert(out1.size() == 1);
     for (size_t i = 0; i < out1[0].size(); ++i)
         qDebug() << i << ":" << out1[0][i];
@@ -62,7 +62,7 @@ void runUnitTests() {
     assert(out1[0][0] == 2);
     assert(out1[0][1] == 617);
 
-    assert(fact(&out2, 397, otherFacts2, 3) == false);
+    assert(factorize(&out2, 397, otherFacts2, 3) == false);
 }
 
 static std::string superScriptDigit(int i) {
@@ -137,7 +137,7 @@ std::string factHelper(int input, int iterations, bool outputForCover) {
         else
             equals = " =\u00A0-";
 
-        if (!fact(&out, input, intvec(), iterations)) {
+        if (!factorize(&out, input, intvec(), iterations)) {
             s << " = " << decoratePrime(input);
         } else {
             for (int i = static_cast<int>(outputForCover ? out.size() - 1 : 0);
