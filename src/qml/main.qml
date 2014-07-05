@@ -35,12 +35,15 @@ ApplicationWindow
     }
 
     function factorizationCompleted() {
-        // This is ugly but avoids potentially calculcating things twice.
-
         // Return true, if
+        // 0. the digit '1' is entered in the field -- it is not a prime but cannot be factorized further
         // 1. the results ends in a '</b>', i.e. the last number is a prime.
         // 2. the last number is a prime but is followed by an exponent of either 1 or 2 digits
 
+        if (parseInt(_sailfactor._field) === 1)
+            return true;
+
+        // This is ugly but avoids potentially calculcating things twice.
         for (var i = 1; i <= 3; ++i) {
             if (_sailfactor._factorizationResult.charAt(_sailfactor._factorizationResult.length - i) == '>')
                 return true;
