@@ -32,6 +32,13 @@ CoverBackground {
             text: getOutput()
             wrapMode: Text.WordWrap
         }
+        Label {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: factorizationCompleted() ? qsTr("No more steps to carry out") : ""
+            font.pixelSize: 18
+            wrapMode: Text.WordWrap
+        }
+
     }
     CoverActionList {
         id: coverAction
