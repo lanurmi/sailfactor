@@ -3,5 +3,6 @@
         <file>lang/sailfactor_fi.qm</file>
         <file>lang/sailfactor_es.qm</file>
         <file>lang/sailfactor_sv.qm</file>
+        <file>lang/sailfactor_de.qm</file>
     </qresource>
 </RCC>
