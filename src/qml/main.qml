@@ -33,6 +33,21 @@ ApplicationWindow
         if (_sailfactor._slider > 0)
             _sailfactor._slider --;
     }
+
+    function factorizationCompleted() {
+        // This is ugly but avoids potentially calculcating things twice.
+
+        // Return true, if
+        // 1. the results ends in a '</b>', i.e. the last number is a prime.
+        // 2. the last number is a prime but is followed by an exponent of either 1 or 2 digits
+
+        for (var i = 1; i <= 3; ++i) {
+            if (_sailfactor._factorizationResult.charAt(_sailfactor._factorizationResult.length - i) == '>')
+                return true;
+        }
+
+        return false;
+    }
 }
 
 

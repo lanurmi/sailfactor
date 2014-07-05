@@ -6,6 +6,7 @@ Page {
 
     property alias _slider: levelSlider.value
     property alias _field: inputField.text
+    property alias _factorizationResult: factorizationResult.text
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
@@ -86,8 +87,8 @@ Page {
                 maximumValue: 22
                 value: 1
                 stepSize: 1
-                label: qsTr("Steps")
-                valueText: value
+                label: factorizationCompleted() ? qsTr("No more steps to carry out") :qsTr("Steps")
+                valueText: sliderValue
             }
         }
     }
