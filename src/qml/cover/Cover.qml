@@ -36,6 +36,7 @@ CoverBackground {
             anchors.horizontalCenter: parent.horizontalCenter
             text: factorizationCompleted() ? qsTr("No more steps to carry out") : ""
             font.pixelSize: 18
+            width: parent.width - Theme.paddingLarge
             wrapMode: Text.WordWrap
         }
 
