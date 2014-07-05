@@ -32,9 +32,14 @@
 <context>
     <name>Cover</name>
     <message>
-        <location filename="../src/qml/cover/Cover.qml" line="22"/>
+        <location filename="../src/qml/cover/Cover.qml" line="23"/>
         <source>Steps: %1</source>
         <translation>Vaiheita: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/cover/Cover.qml" line="37"/>
+        <source>No more steps to carry out</source>
+        <translation>Ei enempää vaiheita suoritettavaksi</translation>
     </message>
 </context>
 <context>
@@ -66,42 +71,51 @@
 <context>
     <name>SailFactor</name>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="18"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="19"/>
         <source>About</source>
         <translation>Tietoja</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="25"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="26"/>
         <source>Help</source>
         <translation>Ohje</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="41"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="42"/>
         <source>Factorization</source>
         <translation>Jako tekijöihin</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="57"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="58"/>
         <source>Enter an integer.</source>
         <translation>Syötä kokonaisluku.</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="58"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="59"/>
         <source>Integer to factorize</source>
         <translation>Tekijöihin jaettava kokonaisluku</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="89"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="90"/>
         <source>Steps</source>
         <translation>Vaiheet</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/pages/SailFactor.qml" line="90"/>
+        <source>No more steps to carry out</source>
+        <translation>Ei enempää vaiheita suoritettavaksi</translation>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/qml/main.qml" line="22"/>
         <source>Enter an integer first.</source>
-        <translation>Syötä ensin kokonaisluku.</translation>
+        <translation type="obsolete">Syötä ensin kokonaisluku.</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/main.qml" line="22"/>
+        <source>No integer entered yet.</source>
+        <translation>Lukua ei ole vielä syötetty.</translation>
     </message>
 </context>
 </TS>

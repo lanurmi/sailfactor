@@ -32,9 +32,14 @@
 <context>
     <name>Cover</name>
     <message>
-        <location filename="../src/qml/cover/Cover.qml" line="22"/>
+        <location filename="../src/qml/cover/Cover.qml" line="23"/>
         <source>Steps: %1</source>
         <translation>Pasos: %1</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/cover/Cover.qml" line="37"/>
+        <source>No more steps to carry out</source>
+        <translation>No hay más pasos que puedan llevar a cabo</translation>
     </message>
 </context>
 <context>
@@ -66,42 +71,51 @@
 <context>
     <name>SailFactor</name>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="18"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="19"/>
         <source>About</source>
         <translation>Acerca de</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="25"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="26"/>
         <source>Help</source>
         <translation>Ayuda</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="41"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="42"/>
         <source>Factorization</source>
         <translation>Factorización</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="57"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="58"/>
         <source>Enter an integer.</source>
         <translation>Escriba un número entero.</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="58"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="59"/>
         <source>Integer to factorize</source>
         <translation>Número entero que factorizará</translation>
     </message>
     <message>
-        <location filename="../src/qml/pages/SailFactor.qml" line="89"/>
+        <location filename="../src/qml/pages/SailFactor.qml" line="90"/>
         <source>Steps</source>
         <translation>Pasos</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/pages/SailFactor.qml" line="90"/>
+        <source>No more steps to carry out</source>
+        <translation>No hay más pasos que puedan llevar a cabo</translation>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/qml/main.qml" line="22"/>
         <source>Enter an integer first.</source>
-        <translation>Por primero, escriba un número entero.</translation>
+        <translation type="obsolete">Por primero, escriba un número entero.</translation>
+    </message>
+    <message>
+        <location filename="../src/qml/main.qml" line="22"/>
+        <source>No integer entered yet.</source>
+        <translation>No se ha escribido un número aún.</translation>
     </message>
 </context>
 </TS>
