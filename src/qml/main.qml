@@ -25,7 +25,7 @@ ApplicationWindow
     }
 
     function nextStep() {
-        if (_sailfactor._slider < 22) // FIXME: should read the real max from somewhere
+        if (factorizationCompleted() === false)
             _sailfactor._slider ++;
     }
 
