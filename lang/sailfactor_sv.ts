@@ -38,8 +38,12 @@
     </message>
     <message>
         <location filename="../src/qml/cover/Cover.qml" line="37"/>
+        <source>No more steps to carry out.</source>
+        <translation>Inga mera steg kan utförs.</translation>
+    </message>
+    <message>
         <source>No more steps to carry out</source>
-        <translation>Inga mera steg kan utförs</translation>
+        <translation type="obsolete">Inga mera steg kan utförs</translation>
     </message>
 </context>
 <context>
@@ -92,8 +96,12 @@
     </message>
     <message>
         <location filename="../src/qml/pages/SailFactor.qml" line="59"/>
+        <source>The integer to factorize.</source>
+        <translation>Heltal som skall faktoriseras.</translation>
+    </message>
+    <message>
         <source>Integer to factorize</source>
-        <translation>Heltal som skall faktoriseras</translation>
+        <translation type="obsolete">Heltal som skall faktoriseras</translation>
     </message>
     <message>
         <location filename="../src/qml/pages/SailFactor.qml" line="90"/>

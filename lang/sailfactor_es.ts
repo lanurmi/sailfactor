@@ -38,8 +38,12 @@
     </message>
     <message>
         <location filename="../src/qml/cover/Cover.qml" line="37"/>
+        <source>No more steps to carry out.</source>
+        <translation>No hay más pasos que puedan llevar a cabo.</translation>
+    </message>
+    <message>
         <source>No more steps to carry out</source>
-        <translation>No hay más pasos que puedan llevar a cabo</translation>
+        <translation type="obsolete">No hay más pasos que puedan llevar a cabo</translation>
     </message>
 </context>
 <context>
@@ -92,8 +96,12 @@
     </message>
     <message>
         <location filename="../src/qml/pages/SailFactor.qml" line="59"/>
+        <source>The integer to factorize.</source>
+        <translation>El número entero que factorizará.</translation>
+    </message>
+    <message>
         <source>Integer to factorize</source>
-        <translation>Número entero que factorizará</translation>
+        <translation type="obsolete">Número entero que factorizará</translation>
     </message>
     <message>
         <location filename="../src/qml/pages/SailFactor.qml" line="90"/>

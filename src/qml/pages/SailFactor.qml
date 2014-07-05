@@ -56,7 +56,7 @@ Page {
                         width: parent.width
                         text: ""
                         placeholderText: qsTr("Enter an integer.")
-                        label: qsTr("Integer to factorize")
+                        label: qsTr("The integer to factorize.")
                         // Ten million ought to be enough for anyone.
                         validator: IntValidator { bottom: -9999999; top: 9999999 }
                         // Show a numpad only, instead of a full keyboard

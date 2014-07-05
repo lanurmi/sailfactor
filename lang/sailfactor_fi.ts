@@ -38,8 +38,12 @@
     </message>
     <message>
         <location filename="../src/qml/cover/Cover.qml" line="37"/>
+        <source>No more steps to carry out.</source>
+        <translation>Ei enempää vaiheita suoritettavaksi.</translation>
+    </message>
+    <message>
         <source>No more steps to carry out</source>
-        <translation>Ei enempää vaiheita suoritettavaksi</translation>
+        <translation type="obsolete">Ei enempää vaiheita suoritettavaksi</translation>
     </message>
 </context>
 <context>
@@ -92,8 +96,12 @@
     </message>
     <message>
         <location filename="../src/qml/pages/SailFactor.qml" line="59"/>
+        <source>The integer to factorize.</source>
+        <translation>Tekijöihin jaettava kokonaisluku.</translation>
+    </message>
+    <message>
         <source>Integer to factorize</source>
-        <translation>Tekijöihin jaettava kokonaisluku</translation>
+        <translation type="obsolete">Tekijöihin jaettava kokonaisluku</translation>
     </message>
     <message>
         <location filename="../src/qml/pages/SailFactor.qml" line="90"/>
