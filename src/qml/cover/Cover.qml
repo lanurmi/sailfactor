@@ -27,7 +27,7 @@ CoverBackground {
         Label {
             id: label
             x: Theme.paddingLarge
-            width: parent.width - Theme.paddingLarge
+            width: parent.width - 2 * Theme.paddingLarge
 
             text: getOutput()
             wrapMode: Text.WordWrap
@@ -36,7 +36,7 @@ CoverBackground {
             anchors.horizontalCenter: parent.horizontalCenter
             text: factorizationCompleted() ? qsTr("No more steps to carry out.") : ""
             font.pixelSize: 18
-            width: parent.width - Theme.paddingLarge
+            width: parent.width - 2 * Theme.paddingLarge
             wrapMode: Text.WordWrap
         }
 
